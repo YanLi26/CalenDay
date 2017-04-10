@@ -1,6 +1,6 @@
 # calenday
 
-> A Vue.js project
+> A time management website
 
 ## Build Setup
 
