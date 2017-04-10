@@ -1,6 +1,18 @@
+This repository was made for HW3 and HW4 in Open Source Development course - CSCI 4830/7000 at University of Colorado Boulder.
+
 # calenday
 
 > A time management website
+
+This is a time managemene website written by Vue 2.0.
+
+## technology stack
+
+> vue
+> vue-router
+> axios
+> webpack
+> vue-cli
 
 ## Build Setup
 
