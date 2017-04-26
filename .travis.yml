@@ -1,5 +1,5 @@
 language: node_js
-node_js: stable,
-group: stable,
-dist: precise,
+node_js: stable
+group: stable
+dist: precise
 os: linux
