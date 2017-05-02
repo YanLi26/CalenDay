@@ -31,6 +31,27 @@
     <hr>
     <div class="jumbotron">
       <div class="row">
+        <div class="col-xs-2 userinfo">
+          <img src="http://p1.qqyou.com/touxiang/UploadPic/2015-6/19/2015061914564960842.jpeg" class="avatar img-circle img-responsive" />
+          <p class="text-center">
+            <strong>{{ username }}</strong>
+          </p>
+        </div>
+        <div class="col-xs-2 timeinfo">
+          <h3>
+            <i class="glyphicon glyphicon-time">
+            </i>
+            {{ usertime }}
+          </h3>
+          <p class="label label-success text-center">
+            <i class="glyphicon glyphicon-calendar"></i>
+            {{ userdate }}
+          </p>
+        </div>
+        <div class="col-xs-8 desinfo">
+          <h3>{{ usertitle }}</h3>
+          <p>{{ userdes }}</p>
+        </div>
       </div>
     </div>
   </div>
@@ -44,7 +65,12 @@ export default {
       cdate: '',
       ctime: '0',
       ctitle: '',
-      cdes: ''
+      cdes: '',
+      username: 'Yan',
+      usertime: '3',
+      userdate: '2017-04-20',
+      userdes: 'Finishing 5 questions in Dynamic Programming',
+      usertitle: 'leetcode'
     }
   }
 }
@@ -70,7 +96,23 @@ a {
   color: #42b983;
 }
 
-/*input {
-  position: relative;
-}*/
+.avatar {
+  height: 100px;
+  margin: 0 auto;
+}
+
+.userinfo {
+  border-right: 1px solid #ddd;
+  margin: -10px 0;
+}
+.desinfo {
+  word-wrap: break-word; 
+  word-break: normal; 
+  margin-top:-3%;
+}
+.jumbotron {
+  padding-left:2%;
+  padding-bottom: 2%;
+}
+
 </style>
