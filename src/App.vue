@@ -1,9 +1,9 @@
 <template>
-<div id = 'app'>
-  <nav class="navbar navbar-default">
+  <div id="app">
+    <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="/">CalenDay</a>
+      <a class="navbar-brand" href="#">Calenday</a>
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="/">Home</a></li>
@@ -13,7 +13,9 @@
     </ul>
   </div>
 </nav>
-   <router-view></router-view>
+<div class="container">
+      <router-view></router-view>
+</div>
   </div>
 </template>
 
@@ -28,8 +30,7 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /*text-align: center;*/
   color: #2c3e50;
-  /*margin-top: 60px;*/
 }
 </style>
