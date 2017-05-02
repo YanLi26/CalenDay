@@ -29,7 +29,7 @@
       </div>
     </div>
     <hr>
-    <div class="jumbotron">
+    <div class="jumbotron" v-for="item in items">
       <div class="row">
         <div class="col-xs-2 userinfo">
           <img src="http://p1.qqyou.com/touxiang/UploadPic/2015-6/19/2015061914564960842.jpeg" class="avatar img-circle img-responsive" />
@@ -41,16 +41,16 @@
           <h3>
             <i class="glyphicon glyphicon-time">
             </i>
-            {{ usertime }}
+            {{ item.usertime }}
           </h3>
           <p class="label label-success text-center">
             <i class="glyphicon glyphicon-calendar"></i>
-            {{ userdate }}
+            {{ item.userdate }}
           </p>
         </div>
         <div class="col-xs-8 desinfo">
-          <h3>{{ usertitle }}</h3>
-          <p>{{ userdes }}</p>
+          <h3>{{ item.usertitle }}</h3>
+          <p>{{ item.userdes }}</p>
         </div>
       </div>
     </div>
@@ -67,10 +67,20 @@ export default {
       ctitle: '',
       cdes: '',
       username: 'Yan',
-      usertime: '3',
-      userdate: '2017-04-20',
-      userdes: 'Finishing 5 questions in Dynamic Programming',
-      usertitle: 'leetcode'
+      items: [
+        {
+          usertime: '3',
+          userdate: '2017-04-20',
+          userdes: 'Finishing 5 questions in Dynamic Programming',
+          usertitle: 'leetcode'
+        },
+        {
+          usertime: '5',
+          userdate: '2017-04-20',
+          userdes: 'Prepare the presentation of open source project',
+          usertitle: 'Presentation'
+        }
+      ]
     }
   }
 }
@@ -111,6 +121,8 @@ a {
   margin-top:-3%;
 }
 .jumbotron {
+  margin: 0px;
+  border-bottom: 1px solid #ddd;
   padding-left:2%;
   padding-bottom: 2%;
 }
